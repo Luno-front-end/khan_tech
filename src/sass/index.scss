@@ -1,0 +1,13 @@
+//Fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+// Styles components
+@import "./base/normalize";
+@import "./utils/variables";
+@import "./base/base";
+
+//Desktop
+@import "./components/desktop/header";
+@import "./components/desktop/navigation";
+@import "./components/desktop/logo";
+@import "./components/desktop/contact-header";
