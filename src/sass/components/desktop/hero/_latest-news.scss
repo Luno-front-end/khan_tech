@@ -1,0 +1,97 @@
+.wrapper-news {
+  color: $bg-base-main-color;
+}
+.news-header {
+  color: $header-color;
+
+  margin-bottom: 18px;
+
+  font-weight: $medium;
+  font-size: 30px;
+  line-height: 46px;
+}
+.box-news {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-right: 32px;
+  padding-left: 32px;
+
+  width: calc(425px - 64px);
+  height: 114.67px;
+
+  &:nth-child(2) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(../../../../img/news_img_one.jpg);
+
+    background-position: center;
+    background-size: cover;
+
+    &:hover {
+      background: linear-gradient(
+          0deg,
+          rgba(8, 128, 174, 0.8),
+          rgba(8, 128, 174, 0.8)
+        ),
+        url(../../../../img/news_img_one.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  &:nth-child(3) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(../../../../img/news_img_two.jpg);
+
+    background-position: center;
+    background-size: cover;
+
+    &:hover {
+      background: linear-gradient(
+          0deg,
+          rgba(8, 128, 174, 0.8),
+          rgba(8, 128, 174, 0.8)
+        ),
+        url(../../../../img/news_img_two.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  &:nth-child(4) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(../../../../img/news_img_three.jpg);
+
+    background-position: center;
+    background-size: cover;
+
+    &:hover {
+      background: linear-gradient(
+          0deg,
+          rgba(8, 128, 174, 0.8),
+          rgba(8, 128, 174, 0.8)
+        ),
+        url(../../../../img/news_img_three.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.text-news {
+  margin-bottom: 10px;
+
+  font-weight: $medium;
+  font-size: 18px;
+  line-height: 27px;
+}
+.date-news {
+  font-weight: $medium;
+
+  font-size: 12px;
+  line-height: 16px;
+}

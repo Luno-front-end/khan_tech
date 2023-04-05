@@ -1,6 +1,7 @@
 import React from "react";
 import { Header } from "./components/Header/Header";
-import { Hero } from "./components/Hero/Hero";
+import { Hero } from "./components/Sections/Hero/Hero";
+import { Testimonials } from "./components/Sections/Testimonials/Testimonials";
 
 export const App = () => {
   return (
@@ -11,6 +12,7 @@ export const App = () => {
 
       <main>
         <Hero />
+        <Testimonials />
       </main>
     </>
   );

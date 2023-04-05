@@ -7,7 +7,10 @@
 @import "./base/base";
 
 //Desktop
-@import "./components/desktop/header";
-@import "./components/desktop/navigation";
-@import "./components/desktop/logo";
-@import "./components/desktop/contact-header";
+@import "./components/desktop/header/header";
+@import "./components/desktop/header/navigation";
+@import "./components/desktop/header/logo";
+@import "./components/desktop/header/contact-header";
+@import "./components/desktop/hero/hero";
+@import "./components/desktop/hero/latest-news";
+@import "./components/desktop/testimonials/testimonials";

@@ -14,8 +14,8 @@ export const Navigation: FC = () => {
   return (
     <div className="wrapper-nav">
       <ul className="list-nav">
-        {itemNav.map((item) => (
-          <li className="item-nav">
+        {itemNav.map((item, i) => (
+          <li className="item-nav" key={i}>
             <a href="#" className="link-nav">
               {item.name}
             </a>
