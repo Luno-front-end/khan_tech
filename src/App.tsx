@@ -1,4 +1,5 @@
 import React from "react";
+import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
 import { Hero } from "./components/Sections/Hero/Hero";
 import { Testimonials } from "./components/Sections/Testimonials/Testimonials";
@@ -14,6 +15,9 @@ export const App = () => {
         <Hero />
         <Testimonials />
       </main>
+      <footer className="footer">
+        <Footer />
+      </footer>
     </>
   );
 };

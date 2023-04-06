@@ -1,0 +1,56 @@
+.footer {
+  background-color: $text-color;
+  color: $bg-base-main-color;
+
+  padding-top: 64px;
+  padding-bottom: 44px;
+}
+.flex-box {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 40px;
+}
+.header-list-footer {
+  margin-bottom: 24px;
+
+  font-weight: $medium;
+  font-size: 22px;
+  line-height: 40px;
+}
+.list-footer {
+}
+.item-footer {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+.link-footer {
+  color: $bg-base-main-color;
+
+  font-size: 14px;
+  line-height: 24px;
+
+  & > address {
+    font-style: normal;
+  }
+}
+.copyright {
+  font-size: 14px;
+  line-height: 28px;
+}
+.icon-logo-footer {
+  --color1: #d8d8d8;
+  --color2: #d8d8d8;
+  --color3: #d8d8d8;
+
+  margin-bottom: 20px;
+
+  width: 278px;
+  height: 112px;
+}
+.text-info-company {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+}

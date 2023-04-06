@@ -1,0 +1,49 @@
+.wrapper-head-office {
+  margin-right: 24px;
+}
+.item-office {
+  display: flex;
+
+  width: 312px;
+
+  &:nth-child(1) {
+    margin-bottom: 16px;
+  }
+  &:nth-child(2) {
+    margin-bottom: 8px;
+  }
+  &:nth-child(3) {
+    margin-bottom: 8px;
+  }
+}
+
+.icon-pin {
+  fill: $bg-base-main-color;
+
+  margin-top: 9px;
+
+  width: 12px;
+  height: 12px;
+
+  margin-right: 10px;
+}
+.icon-email {
+  fill: $bg-base-main-color;
+
+  margin-top: 9px;
+
+  width: 12px;
+  height: 10px;
+
+  margin-right: 10px;
+}
+.icon-phone {
+  fill: $bg-base-main-color;
+
+  margin-top: 8px;
+
+  width: 12px;
+  height: 12px;
+
+  margin-right: 10px;
+}
