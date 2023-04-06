@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  database_mysql:
+    image: mysql:latest
+    container_name: database_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 111111 # Задаємо пароль root користувача
+      MYSQL_DATABASE: comments_user # Створюємо нову базу даних
+      MYSQL_USER: user # Створюємо нового користувача
+      MYSQL_PASSWORD: 111111 # Задаємо пароль для нового користувача
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./database_users:/data/db
+    restart: always
+
+volumes:
+  database_users:
