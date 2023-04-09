@@ -1,16 +1,20 @@
 const NodeCache = require("node-cache");
 const cache = new NodeCache();
 
-const getCaching = (keys) => {
-  const cached = cache.get(keys);
+const getCaching = (key) => {
+  const cached = cache.get(key);
 
   const arrayFromCache = cached ? cached : [];
 
   return arrayFromCache;
 };
 
-const setCaching = (keys, values, ttl) => {
-  cache.set(keys, values, ttl);
+const setCaching = (key, values, ttl) => {
+  cache.set(key, values, ttl);
+};
+
+const checkKey = (key) => {
+  return cache.has(key);
 };
 
 const delCeche = (keys) => {
@@ -19,4 +23,4 @@ const delCeche = (keys) => {
   });
 };
 
-module.exports = { getCaching, setCaching, delCeche };
+module.exports = { checkKey, getCaching, setCaching, delCeche };

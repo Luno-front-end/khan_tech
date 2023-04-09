@@ -8,7 +8,7 @@ const EmploeesSchema = require("../Schemas/EmployeeSchema");
 const catching = require("../utils/caching");
 const { batchingAndRecording } = require("../utils/batching");
 
-class Reviews {
+class RecordReviews {
   constructor(data, colums, values) {
     this.columnWithValues = {};
     this.data = data;
@@ -259,4 +259,4 @@ class Reviews {
   }
 }
 
-module.exports = Reviews;
+module.exports = RecordReviews;

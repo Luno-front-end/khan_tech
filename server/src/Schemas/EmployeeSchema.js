@@ -21,11 +21,22 @@ const Employee = sequelize.define("employee", {
   unique_employee_number: {
     type: DataTypes.STRING,
     allowNull: false,
-    unique: true,
   },
 });
 
-Employee.belongsTo(Company, { foreignKey: "companyId" });
-Employee.belongsTo(EmployeesPosition, { foreignKey: "employees_positionId" });
+Employee.belongsTo(Company, {
+  foreignKey: {
+    name: "companyId",
+    allowNull: false,
+  },
+  sourceKey: "id",
+});
+Employee.belongsTo(EmployeesPosition, {
+  foreignKey: {
+    name: "employees_positionId",
+    allowNull: false,
+  },
+  sourceKey: "id",
+});
 
 module.exports = Employee;

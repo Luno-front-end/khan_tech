@@ -14,7 +14,19 @@ const Review = sequelize.define("review", {
   },
 });
 
-Review.belongsTo(Reviewer, { foreignKey: "reviewerId" });
-Reviewer.hasMany(Review, { foreignKey: "reviewerId" });
+Review.belongsTo(Reviewer, {
+  foreignKey: {
+    name: "reviewerId",
+    allowNull: false,
+  },
+  sourceKey: "id",
+});
+Reviewer.hasMany(Review, {
+  foreignKey: {
+    name: "reviewerId",
+    allowNull: false,
+  },
+  sourceKey: "id",
+});
 
 module.exports = Review;

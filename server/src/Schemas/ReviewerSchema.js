@@ -30,6 +30,12 @@ const Reviewer = sequelize.define(
   }
 );
 
-Reviewer.hasMany(Emploees, { foreignKey: "reviewerId" });
+Reviewer.hasMany(Emploees, {
+  foreignKey: {
+    name: "reviewerId",
+    allowNull: false,
+  },
+  sourceKey: "id",
+});
 
 module.exports = Reviewer;
