@@ -21,6 +21,7 @@ const Employee = sequelize.define("employee", {
   unique_employee_number: {
     type: DataTypes.STRING,
     allowNull: false,
+    unique: true,
   },
 });
 

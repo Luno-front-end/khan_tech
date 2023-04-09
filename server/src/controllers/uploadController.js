@@ -1,4 +1,3 @@
-const { Readable } = require("stream");
 const csv = require("fast-csv");
 const fs = require("fs");
 const { v4: uuidv4 } = require("uuid");
@@ -7,13 +6,12 @@ const ReviewsModel = require("../models/Reviews");
 const TestModel = require("../models/Test");
 const path = require("path");
 
-const dirPath = path.join(__dirname, "../files");
+const cache = require("../utils/caching");
 
-const newArray = require("../utils/setArraysForTables");
+const dirPath = path.join(__dirname, "../files");
 
 let currentFilePath = "";
 const newData = [];
-const checkPos = [];
 
 const uploadFile = async (file, res) => {
   const delSpaceFile = file.name.replace(/ /g, "_");
@@ -24,7 +22,7 @@ const uploadFile = async (file, res) => {
   await file.mv(currentFilePath, "utf8");
 };
 
-const reedAndSaveDate = async (req, res) => {
+const reedAndSaveData = async (req, res) => {
   const reviewsCheckTables = new ReviewsModel();
   await reviewsCheckTables.checkTables();
   const file = req.files.file;
@@ -41,37 +39,39 @@ const reedAndSaveDate = async (req, res) => {
         item.replace(/ /g, "_").toLowerCase()
       );
 
-      const review = new ReviewsModel(columsNoSpace, values);
+      const review = new ReviewsModel(null, columsNoSpace, values);
 
       newData.push(review.removeSpaces());
     })
     .on("end", async () => {
+      setTimeout(() => {
+        fs.rm(currentFilePath, { recursive: true }, (err) => {
+          if (err) {
+            console.error(err);
+          } else {
+            console.log("Папку видалено успішно");
+          }
+        });
+      }, 25000);
       await processDataRows(newData);
     });
 
   async function processDataRows(data) {
-    const reviews = new TestModel(data);
+    const reviews = new ReviewsModel(data);
     await reviews.myData();
+
+    // const keysCahe = ["Reviewers", "Companyn", "Position"];
+    // cache.delCeche(keysCahe);
     // reviews.dellCeche();
   }
 
-  // setTimeout(() => {
-  //   fs.rm(currentFilePath, { recursive: true }, (err) => {
-  //     if (err) {
-  //       console.error(err);
-  //     } else {
-  //       console.log("Папку видалено успішно");
-  //     }
-  //   });
-  // }, 25000);
-
-  res.status(200).json({ file: "ok" });
+  res.status(200).json({ message: "File upload" });
 };
 
-const get = async (req, res) => {
+const getAllReviews = async (req, res) => {
   const reviewsModel = new ReviewsModel();
-  const oo = await reviewsModel.getAllCcomments();
-  res.send(oo);
+  const reviews = await reviewsModel.getAllCcomments();
+  res.status(200).json({ message: "200 OK" });
 };
 
-module.exports = { get, reedAndSaveDate };
+module.exports = { getAllReviews, reedAndSaveData };
