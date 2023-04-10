@@ -6,18 +6,45 @@
 @import "./utils/variables";
 @import "./base/base";
 
-//Desktop
-@import "./components/desktop/header/header";
-@import "./components/desktop/header/navigation";
-@import "./components/desktop/header/logo";
-@import "./components/desktop/header/contact-header";
-@import "./components/desktop/hero/hero";
-@import "./components/desktop/hero/latest-news";
-@import "./components/desktop/testimonials/testimonials";
-@import "./components/desktop/testimonials/rating";
-@import "./components/desktop/testimonials/pagination";
-@import "./components/desktop/footer/footer";
-@import "./components/desktop/footer/departments";
-@import "./components/desktop/footer/quick-links";
-@import "./components/desktop/footer/head-office";
-@import "./components/desktop/footer/company-info";
+//Desktop-fullHD
+@import "./components/desktop-fullHD/header/header";
+@import "./components/desktop-fullHD/header/dropdown/service";
+@import "./components/desktop-fullHD/header/dropdown/sub-service";
+@import "./components/desktop-fullHD/header/navigation";
+@import "./components/desktop-fullHD/header/logo";
+@import "./components/desktop-fullHD/header/contact-header";
+@import "./components/desktop-fullHD/hero/hero";
+@import "./components/desktop-fullHD/hero/latest-news";
+@import "./components/desktop-fullHD/testimonials/testimonials";
+@import "./components/desktop-fullHD/testimonials/rating";
+@import "./components/desktop-fullHD/testimonials/pagination";
+@import "./components/desktop-fullHD/footer/footer";
+@import "./components/desktop-fullHD/footer/departments";
+@import "./components/desktop-fullHD/footer/quick-links";
+@import "./components/desktop-fullHD/footer/head-office";
+@import "./components/desktop-fullHD/footer/company-info";
+
+//Desktop mini
+
+@import "./components/desktop-mini/header/burger";
+@import "./components/desktop-mini/footer/footer";
+@import "./components/desktop-mini/footer/departments";
+@import "./components/desktop-mini/footer/quick-links";
+@import "./components/desktop-mini/footer/head-office";
+@import "./components/desktop-mini/footer/company-info";
+
+//tablets
+@import "./components/tablet/header/burger";
+@import "./components/tablet/header/navigation";
+@import "./components/tablet/header/dropdown/service";
+@import "./components/tablet/header/dropdown/sub-service";
+@import "./components/tablet/hero/hero";
+@import "./components/tablet/hero/latest-news";
+@import "./components/tablet/footer/footer";
+@import "./components/tablet/footer/departments";
+@import "./components/tablet/footer/quick-links";
+@import "./components/tablet/footer/head-office";
+@import "./components/tablet/footer/company-info";
+
+//admin
+@import "./components/admin/main";

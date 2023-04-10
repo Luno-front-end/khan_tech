@@ -26,7 +26,32 @@ p {
   margin: 0;
   padding: 0;
 }
+
 .container {
   padding-right: 24px;
   padding-left: 24px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $mobile) {
+    width: calc($mobile - 20px);
+  }
+
+  @media screen and (min-width: $tablet) {
+    // padding-left: 30px;
+    // padding-right: 30px;
+    width: calc($tablet - 48px);
+  }
+
+  @media screen and (min-width: $desktop-mini) {
+    width: calc($desktop-mini - 48px);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc($desktop - 48px);
+  }
+
+  @media screen and (min-width: $desktop-fullHD) {
+    width: calc($desktop-fullHD - 48px);
+  }
 }

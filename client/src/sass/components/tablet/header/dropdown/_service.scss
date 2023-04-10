@@ -1,0 +1,49 @@
+@media screen and (min-width: $tablet) and (max-width: ($desktop-mini - 1)) {
+  .deopdown-service {
+    top: 212px;
+    right: 0;
+    width: 100%;
+
+    text-align: center;
+
+    &::before {
+      left: 0;
+    }
+  }
+
+  .service-itemD {
+    &:nth-child(1) {
+      span {
+        margin-right: 0;
+      }
+      .icon-arrowD {
+        display: none;
+      }
+    }
+    &:nth-child(2) {
+      span {
+        margin-right: 5px;
+      }
+    }
+    &:nth-child(3) {
+      .icon-arrowD {
+        display: none;
+      }
+      span {
+        margin: 0;
+      }
+    }
+    &:nth-child(4) {
+      .icon-arrowD {
+        display: none;
+      }
+      span {
+        margin: 0;
+      }
+    }
+  }
+
+  .active-mobServices {
+    margin-bottom: 200px;
+  }
+}

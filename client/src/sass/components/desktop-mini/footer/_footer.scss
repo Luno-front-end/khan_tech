@@ -1,0 +1,12 @@
+@media screen and (min-width: $desktop-mini) and (max-width: ($desktop - 1)) {
+  .footer {
+    & .container {
+      text-align: center;
+    }
+  }
+  .flex-box {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 450px);
+  }
+}

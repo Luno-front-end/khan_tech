@@ -1,0 +1,9 @@
+@media screen and (min-width: $tablet) and (max-width: ($desktop-mini - 1)) {
+  .deopdown-subService {
+    position: absolute;
+    top: 49px;
+    left: auto;
+    right: 175px;
+    width: 175px;
+  }
+}

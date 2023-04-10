@@ -1,0 +1,9 @@
+@media screen and (min-width: $desktop-mini) and (max-width: ($desktop - 1)) {
+  .wrapper-quick-links {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 80px;
+
+    text-align: center;
+  }
+}

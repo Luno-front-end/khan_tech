@@ -1,0 +1,18 @@
+@media screen and (min-width: $desktop-mini) and (max-width: ($desktop - 1)) {
+  .wrapper-head-office {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .item-office {
+    width: auto;
+
+    &:nth-child(2) {
+      display: block;
+    }
+    &:nth-child(3) {
+      display: block;
+    }
+  }
+}

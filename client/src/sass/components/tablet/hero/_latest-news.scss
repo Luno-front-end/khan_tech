@@ -1,0 +1,6 @@
+@media screen and (min-width: $tablet) and (max-width: ($desktop-fullHD - 1)) {
+  .box-news {
+    width: calc(100% - 64px);
+    height: 150px;
+  }
+}

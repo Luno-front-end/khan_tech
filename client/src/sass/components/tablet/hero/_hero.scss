@@ -1,0 +1,29 @@
+@media screen and (min-width: $tablet) and (max-width: ($desktop-fullHD - 1)) {
+  .wrapper-hero {
+    display: block;
+
+    & .wrapper-content {
+      flex-direction: column;
+
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+  }
+
+  .wrapper-img {
+    width: 100%;
+    height: 440px;
+
+    margin-right: 0px;
+  }
+
+  .wrapper-info {
+    max-width: 100%;
+
+    padding: 32px 24px 32px 32px;
+
+    & > div {
+      display: flex;
+    }
+  }
+}
