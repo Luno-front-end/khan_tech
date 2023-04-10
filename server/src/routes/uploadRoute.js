@@ -6,6 +6,6 @@ const uploadController = require("../controllers/uploadController");
 const router = new Router();
 
 router.post("/", uploadController.reedAndSaveData);
-router.get("/", uploadController.getAllReviews);
+// router.get("/", uploadController.getAllReviews);
 
 module.exports = router;

@@ -6,8 +6,11 @@ const ReviewerSchema = require("../Schemas/ReviewerSchema");
 const { getCaching, setCaching, checkKey } = require("../utils/caching");
 
 class ReceivingReviews {
-  constructor() {
+  constructor(page, perPage) {
+    this.page = page;
+    this.perPage = perPage;
     this.ttl = 3600000;
+    this.itemsPage = 15;
     this.keysCahe = [
       "employeeAll",
       "companyAll",
@@ -19,13 +22,26 @@ class ReceivingReviews {
 
   async getAllEmployee() {
     try {
-      const employee = await EmployeeSchema.findAll();
+      const offset = (this.page - 1) * this.perPage;
+      const limit = this.perPage;
 
-      const result = JSON.parse(JSON.stringify(employee, null, 2));
+      console.log(this.perPage);
 
-      setCaching(this.keysCahe[0], result, this.ttl);
+      const employee = await EmployeeSchema.findAll({ offset, limit });
 
-      return JSON.parse(JSON.stringify(employee, null, 2));
+      const resault = JSON.parse(JSON.stringify(employee, null, 2));
+
+      const count = await EmployeeSchema.count();
+
+      const data = {
+        resault,
+        count,
+        pages: Math.ceil(count / this.itemsPage),
+      };
+
+      setCaching(this.keysCahe[0], data, this.ttl);
+
+      return data;
     } catch (error) {
       console.log(error);
     }
@@ -76,16 +92,10 @@ class ReceivingReviews {
   }
 
   checkCachEmployee() {
-    try {
-      if (checkKey(this.keysCahe[0])) {
-        console.log("ok");
-        return getCaching(this.keysCahe[0]);
-      } else {
-        console.log("error");
-        return [];
-      }
-    } catch (error) {
-      console.log(error);
+    if (checkKey(this.keysCahe[0])) {
+      return getCaching(this.keysCahe[0]);
+    } else {
+      return [];
     }
   }
 }
