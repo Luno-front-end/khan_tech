@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/khan_tech/static/css/main.007fec5d.css",
-    "main.js": "/khan_tech/static/js/main.15e1afe1.js",
+    "main.js": "/khan_tech/static/js/main.6a0ad9f5.js",
     "static/js/119.4ba1c91f.chunk.js": "/khan_tech/static/js/119.4ba1c91f.chunk.js",
     "static/js/461.0e99747e.chunk.js": "/khan_tech/static/js/461.0e99747e.chunk.js",
     "static/media/news_img_two.jpg": "/khan_tech/static/media/news_img_two.c271d51c1ee44e1161e1.jpg",
@@ -11,12 +11,12 @@
     "static/media/sprite.svg": "/khan_tech/static/media/sprite.219b81d4db9f79d27fee58468ef78c4f.svg",
     "index.html": "/khan_tech/index.html",
     "main.007fec5d.css.map": "/khan_tech/static/css/main.007fec5d.css.map",
-    "main.15e1afe1.js.map": "/khan_tech/static/js/main.15e1afe1.js.map",
+    "main.6a0ad9f5.js.map": "/khan_tech/static/js/main.6a0ad9f5.js.map",
     "119.4ba1c91f.chunk.js.map": "/khan_tech/static/js/119.4ba1c91f.chunk.js.map",
     "461.0e99747e.chunk.js.map": "/khan_tech/static/js/461.0e99747e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.007fec5d.css",
-    "static/js/main.15e1afe1.js"
+    "static/js/main.6a0ad9f5.js"
   ]
 }
