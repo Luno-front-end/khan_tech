@@ -2,56 +2,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 // Styles components
-@import "./base/normalize";
-@import "./utils/variables";
-@import "./base/base";
+@import "./base/normalize.scss";
+@import "./utils/variables.scss";
+@import "./base/base.scss";
 
 //Desktop-fullHD
-@import "./components/desktop-fullHD/header/header";
-@import "./components/desktop-fullHD/header/dropdown/service";
-@import "./components/desktop-fullHD/header/dropdown/sub-service";
-@import "./components/desktop-fullHD/header/navigation";
-@import "./components/desktop-fullHD/header/logo";
-@import "./components/desktop-fullHD/header/contact-header";
-@import "./components/desktop-fullHD/hero/hero";
-@import "./components/desktop-fullHD/hero/latest-news";
-@import "./components/desktop-fullHD/testimonials/testimonials";
-@import "./components/desktop-fullHD/testimonials/rating";
-@import "./components/desktop-fullHD/testimonials/pagination";
-@import "./components/desktop-fullHD/footer/footer";
-@import "./components/desktop-fullHD/footer/departments";
-@import "./components/desktop-fullHD/footer/quick-links";
-@import "./components/desktop-fullHD/footer/head-office";
-@import "./components/desktop-fullHD/footer/company-info";
+@import "./components/desktop-fullHD/header/_header.scss";
+@import "./components/desktop-fullHD/header/_dropdown/service.scss";
+@import "./components/desktop-fullHD/header/_dropdown/sub-service.scss";
+@import "./components/desktop-fullHD/header/_navigation.scss";
+@import "./components/desktop-fullHD/header/_logo.scss";
+@import "./components/desktop-fullHD/header/_contact-header.scss";
+@import "./components/desktop-fullHD/hero/_hero.scss";
+@import "./components/desktop-fullHD/hero/_latest-news.scss";
+@import "./components/desktop-fullHD/testimonials/_testimonials.scss";
+@import "./components/desktop-fullHD/testimonials/_rating.scss";
+@import "./components/desktop-fullHD/testimonials/_pagination.scss";
+@import "./components/desktop-fullHD/footer/_footer.scss";
+@import "./components/desktop-fullHD/footer/_departments.scss";
+@import "./components/desktop-fullHD/footer/_quick-links.scss";
+@import "./components/desktop-fullHD/footer/_head-office.scss";
+@import "./components/desktop-fullHD/footer/_company-info.scss";
 
 //Desktop mini
 
-@import "./components/desktop-mini/header/burger";
-@import "./components/desktop-mini/footer/footer";
-@import "./components/desktop-mini/footer/departments";
-@import "./components/desktop-mini/footer/quick-links";
-@import "./components/desktop-mini/footer/head-office";
-@import "./components/desktop-mini/footer/company-info";
+@import "./components/desktop-mini/header/_burger.scss";
+@import "./components/desktop-mini/footer/_footer.scss";
+@import "./components/desktop-mini/footer/_departments.scss";
+@import "./components/desktop-mini/footer/_quick-links.scss";
+@import "./components/desktop-mini/footer/_head-office.scss";
+@import "./components/desktop-mini/footer/_company-info.scss";
 
 //tablets
-@import "./components/tablet/header/burger";
-@import "./components/tablet/header/navigation";
-@import "./components/tablet/header/dropdown/service";
-@import "./components/tablet/header/dropdown/sub-service";
-@import "./components/tablet/hero/hero";
-@import "./components/tablet/hero/latest-news";
-@import "./components/tablet/footer/footer";
-@import "./components/tablet/footer/departments";
-@import "./components/tablet/footer/quick-links";
-@import "./components/tablet/footer/head-office";
-@import "./components/tablet/footer/company-info";
+@import "./components/tablet/header/_burger.scss";
+@import "./components/tablet/header/_navigation.scss";
+@import "./components/tablet/header/_dropdown/service.scss";
+@import "./components/tablet/header/_dropdown/sub-service.scss";
+@import "./components/tablet/hero/_hero.scss";
+@import "./components/tablet/hero/_latest-news.scss";
+@import "./components/tablet/footer/_footer.scss";
+@import "./components/tablet/footer/_departments.scss";
+@import "./components/tablet/footer/_quick-links.scss";
+@import "./components/tablet/footer/_head-office.scss";
+@import "./components/tablet/footer/_company-info.scss";
 
 //admin
-@import "./components/admin/main";
-@import "./components/admin/sign";
+@import "./components/admin/_main.scss";
+@import "./components/admin/_sign.scss";
 
 //404
-@import "./components/desktop-fullHd/not-found";
+@import "./components/desktop-fullHd/_not-found.scss";
 
 //loader
-@import "./components/desktop-fullHd/loader";
+@import "./components/desktop-fullHd/_loader.scss";

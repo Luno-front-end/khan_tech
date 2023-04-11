@@ -1,8 +1,6 @@
 import axios from "axios";
 
 const BASE_URL = "http://195.54.175.196";
-//
-// http://195.54.175.196/reviews
 
 const getEmployees = async (page: number) => {
   const res = await axios.get(`${BASE_URL}/reviews?limit=15&page=${page}`);
