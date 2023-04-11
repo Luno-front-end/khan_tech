@@ -1,4 +1,5 @@
 const ReceivingReviews = require("../models/ReceivingReviews");
+const RecordReviewsModel = require("../models/RecordReviews");
 const getDataReviews = require("../utils/getDataReviews");
 
 const getAllReviws = async (req, res) => {
