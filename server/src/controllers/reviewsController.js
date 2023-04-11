@@ -1,4 +1,4 @@
-const ReceivingReviews = require("../models/receivingReviews");
+const ReceivingReviews = require("../models/ReceivingReviews");
 const getDataReviews = require("../utils/getDataReviews");
 
 const getAllReviws = async (req, res) => {

@@ -1,4 +1,4 @@
-const ReceivingReviews = require("../models/receivingReviews");
+const ReceivingReviews = require("../models/ReceivingReviews");
 
 const getDataReviews = async (data) => {
   const receivingReviews = new ReceivingReviews();
