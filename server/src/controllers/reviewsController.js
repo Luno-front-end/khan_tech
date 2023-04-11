@@ -7,7 +7,6 @@ const getAllReviws = async (req, res) => {
     const page = req.query.page;
 
     const receivingReviews = new ReceivingReviews(page, limit);
-    console.log(limit);
 
     const data = await receivingReviews.getAllEmployee();
 

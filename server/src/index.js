@@ -1,6 +1,5 @@
 const express = require("express");
 const fileUpload = require("express-fileupload");
-const CommentsModel = require("./models/RecordReviews");
 const cors = require("cors");
 
 require("dotenv").config();
@@ -23,12 +22,5 @@ app.use("/upload", uploadRoute);
 app.use("/reviews", reviewsRoute);
 app.use("/delete", uploadRoute);
 app.use("/", adminRoute);
-app.get("/q", async (req, res) => {
-  const t = new CommentsModel();
-  await t.deleteTables();
-});
-// app.use("/q", async () => {
-
-//   });
 
 app.listen(8080, () => console.log(8080));

@@ -1,6 +1,6 @@
 let batches = [];
 
-const batchingAndRecording = async (array, batchSize, callBack, options) => {
+const batchingAndRecording = async (array, batchSize, callBack) => {
   for (let i = 0; i < array.length; i += batchSize) {
     batches.push(array.slice(i, i + batchSize));
   }
