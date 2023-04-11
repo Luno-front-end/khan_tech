@@ -2,56 +2,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 // Styles components
-@import "base/normalize";
-@import "utils/variables";
-@import "base/base";
+@import "normalize";
+@import "variables";
+@import "base";
 
 //Desktop-fullHD
-@import "components/desktop-fullHD/header/header";
-@import "components/desktop-fullHD/header/dropdown/service";
-@import "components/desktop-fullHD/header/dropdown/sub-service";
-@import "components/desktop-fullHD/header/navigation";
-@import "components/desktop-fullHD/header/logo";
-@import "components/desktop-fullHD/header/contact-header";
-@import "components/desktop-fullHD/hero/hero";
-@import "components/desktop-fullHD/hero/latest-news";
-@import "components/desktop-fullHD/testimonials/testimonials";
-@import "components/desktop-fullHD/testimonials/rating";
-@import "components/desktop-fullHD/testimonials/pagination";
-@import "components/desktop-fullHD/footer/footer";
-@import "components/desktop-fullHD/footer/departments";
-@import "components/desktop-fullHD/footer/quick-links";
-@import "components/desktop-fullHD/footer/head-office";
-@import "components/desktop-fullHD/footer/company-info";
+@import "desktop-fullHD/header/header";
+@import "desktop-fullHD/header/dropdown/service";
+@import "desktop-fullHD/header/dropdown/sub-service";
+@import "desktop-fullHD/header/navigation";
+@import "desktop-fullHD/header/logo";
+@import "desktop-fullHD/header/contact-header";
+@import "desktop-fullHD/hero/hero";
+@import "desktop-fullHD/hero/latest-news";
+@import "desktop-fullHD/testimonials/testimonials";
+@import "desktop-fullHD/testimonials/rating";
+@import "desktop-fullHD/testimonials/pagination";
+@import "desktop-fullHD/footer/footer";
+@import "desktop-fullHD/footer/departments";
+@import "desktop-fullHD/footer/quick-links";
+@import "desktop-fullHD/footer/head-office";
+@import "desktop-fullHD/footer/company-info";
 
 //Desktop mini
 
-@import "components/desktop-mini/header/burger";
-@import "components/desktop-mini/footer/footer";
-@import "components/desktop-mini/footer/departments";
-@import "components/desktop-mini/footer/quick-links";
-@import "components/desktop-mini/footer/head-office";
-@import "components/desktop-mini/footer/company-info";
+@import "desktop-mini/header/burger";
+@import "desktop-mini/footer/footer";
+@import "desktop-mini/footer/departments";
+@import "desktop-mini/footer/quick-links";
+@import "desktop-mini/footer/head-office";
+@import "desktop-mini/footer/company-info";
 
 //tablets
-@import "components/tablet/header/burger";
-@import "components/tablet/header/navigation";
-@import "components/tablet/header/dropdown/service";
-@import "components/tablet/header/dropdown/sub-service";
-@import "components/tablet/hero/hero";
-@import "components/tablet/hero/latest-news";
-@import "components/tablet/footer/footer";
-@import "components/tablet/footer/departments";
-@import "components/tablet/footer/quick-links";
-@import "components/tablet/footer/head-office";
-@import "components/tablet/footer/company-info";
+@import "tablet/header/burger";
+@import "tablet/header/navigation";
+@import "tablet/header/dropdown/service";
+@import "tablet/header/dropdown/sub-service";
+@import "tablet/hero/hero";
+@import "tablet/hero/latest-news";
+@import "tablet/footer/footer";
+@import "tablet/footer/departments";
+@import "tablet/footer/quick-links";
+@import "tablet/footer/head-office";
+@import "tablet/footer/company-info";
 
 //admin
-@import "components/admin/main";
-@import "components/admin/sign";
+@import "admin/main";
+@import "admin/sign";
 
 //404
-@import "components/desktop-fullHd/not-found";
+@import "desktop-fullHd/not-found";
 
 //loader
-@import "components/desktop-fullHd/loader";
+@import "desktop-fullHd/loader";
