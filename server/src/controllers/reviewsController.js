@@ -6,6 +6,9 @@ const getAllReviws = async (req, res) => {
     const limit = req.query.limit;
     const page = req.query.page;
 
+    const reviewsCheckTables = new RecordReviewsModel();
+    await reviewsCheckTables.checkTables();
+
     const receivingReviews = new ReceivingReviews(page, limit);
 
     const data = await receivingReviews.getAllEmployee();
