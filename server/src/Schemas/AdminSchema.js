@@ -1,7 +1,7 @@
 const { DataTypes } = require("sequelize");
 const { sequelize } = require("../config/db");
 
-const User = sequelize.define("user", {
+const User = sequelize.define("admin_users", {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
@@ -10,6 +10,7 @@ const User = sequelize.define("user", {
   name: {
     type: DataTypes.STRING,
     allowNull: false,
+    unique: true,
   },
   password: {
     type: DataTypes.STRING,

@@ -22,20 +22,15 @@ class RecordReviews {
   }
 
   async checkTables() {
-    try {
       await ReviewerSchema.sync();
       await ReviewSchema.sync();
       await CompanySchema.sync();
       await EmployeesPositionSchema.sync();
       await EmploeesSchema.sync();
-    } catch (error) {
-      console.log(error);
-    }
+   
   }
 
   async myData() {
-    try {
-      const t = await sequelize.transaction();
 
       const reviewerData = this.data.map((d) => ({
         reviewer: d.reviewer,
@@ -139,67 +134,42 @@ class RecordReviews {
         }
       );
 
-      await t.commit();
-    } catch (error) {
-      console.log(error);
-      await t.rollback();
-    }
+   
   }
 
   async saveDataReviewer(data, options) {
-    try {
       await ReviewerSchema.bulkCreate(data, {
         ignoreDuplicates: true,
         ...options,
       });
-    } catch (error) {
-      console.log(error);
-    }
+ 
   }
 
   async saveDataReview(data, t) {
-    try {
       await ReviewSchema.bulkCreate(data, {
         ignoreDuplicates: true,
       });
-    } catch (error) {
-      console.log(error);
-    }
   }
 
   async saveDataCompany(data, t) {
-    try {
       await CompanySchema.bulkCreate(data, {
         ignoreDuplicates: true,
       });
-    } catch (error) {
-      console.log(error);
-    }
   }
 
   async saveDataEmployeesPosition(data, t) {
-    try {
       await EmployeesPositionSchema.bulkCreate(data, {
         ignoreDuplicates: true,
       });
-    } catch (error) {
-      console.log(error);
-    }
   }
   async saveDataEmploees(data, t) {
-    try {
       await EmploeesSchema.bulkCreate(data, {
         ignoreDuplicates: true,
       });
 
-      console.log("seccessful");
-    } catch (error) {
-      console.log("error");
-    }
   }
 
   async getAllCompany() {
-    try {
       const company = await CompanySchema.findAll();
 
       const result = JSON.parse(JSON.stringify(company, null, 2));
@@ -207,13 +177,9 @@ class RecordReviews {
       catching.setCaching(this.keysCahe[1], result, this.ttl);
 
       return JSON.parse(JSON.stringify(company, null, 2));
-    } catch (error) {
-      console.log(error);
-    }
   }
 
   async getAllPosition() {
-    try {
       const position = await EmployeesPositionSchema.findAll();
 
       const result = JSON.parse(JSON.stringify(position, null, 2));
@@ -221,13 +187,9 @@ class RecordReviews {
       catching.setCaching(this.keysCahe[2], result, this.ttl);
 
       return JSON.parse(JSON.stringify(position, null, 2));
-    } catch (error) {
-      console.log(error);
-    }
   }
 
   async getAllReviewer() {
-    try {
       const reviewer = await ReviewerSchema.findAll();
 
       const result = JSON.parse(JSON.stringify(reviewer, null, 2));
@@ -235,9 +197,6 @@ class RecordReviews {
       catching.setCaching(this.keysCahe[0], result, this.ttl);
 
       return JSON.parse(JSON.stringify(reviewer, null, 2));
-    } catch (error) {
-      console.log(error);
-    }
   }
 
   removeSpaces() {
@@ -249,13 +208,15 @@ class RecordReviews {
   }
 
   async deleteTables() {
-    // await CompanySchema.destroy({ where: {}, truncate: true })
-    //   .then(() => console.log("Таблиця була видалена"))
-    //   .catch((err) => console.log(err));
-    // await EmployeesPositionSchema.destroy({ where: {}, truncate: true });
-    // await ReviewSchema.destroy({ where: {}, truncate: true });
-    // await EmploeesSchema.destroy({ where: {}, truncate: true });
-    // await ReviewerSchema.destroy({ where: {}, truncate: true });
+    await EmploeesSchema.sync({ force: true });
+
+    await ReviewSchema.sync({ force: true });
+
+    await ReviewerSchema.sync({ force: true });
+
+    await CompanySchema.sync({ force: true });
+
+    await EmployeesPositionSchema.sync({ force: true });
   }
 }
 

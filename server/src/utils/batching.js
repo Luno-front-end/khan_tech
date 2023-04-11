@@ -6,10 +6,7 @@ const batchingAndRecording = async (array, batchSize, callBack, options) => {
   }
 
   for (const batch of batches) {
-    await callBack(batch)
-      .then(() => console.log("seccess batch"))
-      .catch(() => console.log("error batch"));
-    // this.saveDataEmployeesPosition(, optins);
+    await callBack(batch);
   }
 
   batches = [];
