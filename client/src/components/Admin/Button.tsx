@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, RefObject } from "react";
+import React, { FC, ReactNode } from "react";
 
 interface ButtonProps {
   children: ReactNode;

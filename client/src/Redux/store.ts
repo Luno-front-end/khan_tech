@@ -6,6 +6,7 @@ import {
 import { persistReducer, persistStore } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import adminAuthReducers from "./slices/adminAuthUser";
+import dataReducers from "./slices/dataReviews";
 
 const customMidleware = getDefaultMiddleware({ serializableCheck: false });
 
@@ -16,6 +17,7 @@ const psAdminReducers = persistReducer(persistUserConfig, adminReducer);
 export const store = configureStore({
   reducer: {
     adminAuth: psAdminReducers,
+    data: dataReducers,
   },
   middleware: customMidleware,
 });

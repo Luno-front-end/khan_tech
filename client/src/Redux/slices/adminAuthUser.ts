@@ -24,10 +24,15 @@ const adminAuthSlice = createSlice({
       state.isAuth = true;
       state.user = action.payload.user;
     },
+     noAuth: (state) => {
+      state.token = "";
+      state.isAuth = false;
+      state.user = [];
+    },
   },
 });
 
-export const { auth } = adminAuthSlice.actions;
+export const { auth,noAuth } = adminAuthSlice.actions;
 
 export const selectCount = (state: RootState) => state;
 

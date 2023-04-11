@@ -1,13 +1,23 @@
-import React, { ChangeEvent, FC, useRef, useState } from "react";
+import React, { ChangeEvent, FC, useState } from "react";
 import { Button } from "./Button";
 import Api from "../../Api/getEmployees";
 import { useSelector } from "react-redux";
 import { RootState } from "../../Redux/store";
 
+interface State {
+  upload: boolean;
+  delete: boolean;
+}
+
 export const Main: FC = () => {
   const [file, setFile] = useState<object>({});
   const [fileLength, setFileLength] = useState<number>(0);
   const [isDisabled, setIsDisabled] = useState<boolean>(false);
+  const [isActiveNotify, setIsActiveNotify] = useState<State>({
+    upload: false,
+    delete: false,
+  });
+  const [seccessFile, setSeccessFile] = useState<string>("");
 
   const token = useSelector(
     (state: RootState) => state.adminAuth.adminAuth.token
@@ -23,7 +33,18 @@ export const Main: FC = () => {
     e.preventDefault();
     if (fileLength === 0) return;
     setIsDisabled(true);
-    await Api.uploadFile(file, token).then(() => setIsDisabled(false));
+    await Api.uploadFile(file, token)
+      .then(() => {
+        setSeccessFile("Upload finish");
+        setIsActiveNotify((prev) => ({
+          ...prev,
+          upload: true,
+        }));
+        setIsDisabled(false);
+      })
+      .catch((err) => {
+     console.log(err)
+      });
   };
 
   const handleClickDeleteRecords = async (
@@ -31,7 +52,19 @@ export const Main: FC = () => {
   ) => {
     e.preventDefault();
 
-    await Api.deleteRecords(token).then(() => setIsDisabled(false));
+    await Api.deleteRecords(token)
+      .then(() => {
+        setSeccessFile("Delete finish");
+        setIsActiveNotify((prev) => ({
+          ...prev,
+          delete: true,
+        }));
+        setIsDisabled(false);
+      })
+      .catch((err) => {
+      
+        console.log(err)
+      });
   };
 
   return (
@@ -58,6 +91,8 @@ export const Main: FC = () => {
         >
           Видалити всі записи!
         </Button>
+        {(isActiveNotify.upload || isActiveNotify.delete )&& <p className="seccess-file">{seccessFile}</p>}
+
       </div>
     </div>
   );

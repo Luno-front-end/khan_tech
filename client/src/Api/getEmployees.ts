@@ -1,5 +1,4 @@
 import axios from "axios";
-import { Dispatch, SetStateAction } from "react";
 
 const BASE_URL = "http://localhost:8080";
 
@@ -21,7 +20,7 @@ const uploadFile = async (file: any, token: string) => {
     const res = await axios.post(`${BASE_URL}/upload`, formData, {
       headers: { Authorization: `Bearer ${token}` },
     });
-    return await res.data;
+    return res;
   } catch (err: any) {
     console.log(err);
   }
@@ -33,7 +32,7 @@ const deleteRecords = async (token: string) => {
       headers: { Authorization: `Bearer ${token}` },
     });
 
-    return await res.data;
+    return res;
   } catch (err: any) {
     console.log(err);
   }
@@ -69,7 +68,7 @@ const auth = async (token: string) => {
       headers: { Authorization: `Bearer ${token}` },
     });
 
-    return await res.data;
+    return res;
   } catch (err: any) {
     console.log(err);
   }

@@ -4,7 +4,7 @@ import { SignUp } from "./components/Admin/SignUp";
 import { Client } from "./components/Client";
 import { Route, Routes } from "react-router-dom";
 import { PrivateRoute } from "./components/Routes/PrivateRoute";
-import { useState } from "react";
+import { NotFound } from "./components/NotFound";
 
 export const App = () => {
   return (
@@ -21,6 +21,8 @@ export const App = () => {
       />
       <Route path="/login" element={<SignIn />} />
       <Route path="/reg" element={<SignUp />} />
+
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };

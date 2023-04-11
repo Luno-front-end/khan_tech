@@ -12,7 +12,6 @@ export const SignIn: FC = () => {
 
   const navigate = useNavigate();
 
-  //   const userInfo = useSelector((state: RootState) => state.user);
   const dispatch = useDispatch();
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
