@@ -1,0 +1,20 @@
+@media screen and (min-width: $tablet) and (max-width: ($desktop-mini  - 1)) {
+  .wrapper-head-office {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+    margin-bottom: 80px;
+  }
+
+  .item-office {
+    width: auto;
+
+    &:nth-child(2) {
+      display: block;
+    }
+    &:nth-child(3) {
+      display: block;
+    }
+  }
+}

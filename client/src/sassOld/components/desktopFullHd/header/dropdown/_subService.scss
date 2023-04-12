@@ -1,0 +1,32 @@
+.deopdown-subService {
+  position: absolute;
+  top: 49px;
+  left: 175px;
+  width: 175px;
+}
+
+.link-subServiceD {
+  display: block;
+  color: $header-color;
+
+  padding: 12px 12px 12px 14px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+
+  transition: color 250ms linear;
+
+  &:hover {
+    color: $active-color;
+    & .icon-arrowD {
+      fill: $active-color;
+    }
+    transition: color 250ms linear, fill 250ms linear;
+  }
+  &:focus {
+    color: $active-color;
+    transition: color 250ms linear;
+    transition: color 250ms linear, fill 250ms linear;
+  }
+}

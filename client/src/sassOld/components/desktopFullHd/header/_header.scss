@@ -1,0 +1,15 @@
+.header {
+  background-color: $bg-base-main-color;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.100361);
+}
+
+.wrapper-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper-info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,94 @@
+.backdrop-panel {
+  background-color: $active-color;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-admin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $rating-color;
+  padding: 20px;
+  color: $header-color;
+
+  border-radius: 5px;
+}
+.header-panel {
+  margin-bottom: 20px;
+}
+.form-admin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.input-admin {
+  margin-bottom: 20px;
+}
+.btn-send-admin {
+  background-color: rgb(73, 156, 73);
+
+  padding: 10px;
+
+  border: none;
+  border-radius: 10px;
+
+  transition: background-color 250ms linear;
+
+  &:hover {
+    background-color: rgb(60, 172, 60);
+
+    transition: background-color 250ms linear;
+  }
+  &:focus {
+    background-color: rgb(60, 172, 60);
+
+    transition: background-color 250ms linear;
+  }
+  cursor: pointer;
+}
+.btn-del-admin {
+  background-color: rgb(153, 39, 39);
+
+  padding: 10px;
+  margin-bottom: 15px;
+
+  border: none;
+  border-radius: 10px;
+
+  transition: background-color 250ms linear;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(201, 51, 51);
+
+    transition: background-color 250ms linear;
+  }
+  &:focus {
+    background-color: rgb(201, 51, 51);
+
+    transition: background-color 250ms linear;
+  }
+}
+
+.seccess-file {
+  color: rgb(45, 233, 45);
+
+  padding: 5px;
+
+  font-size: 20px;
+  border: 1px solid rgb(45, 233, 45);
+}
+.error-file {
+  color: rgb(233, 45, 45);
+
+  padding: 5px;
+
+  font-size: 20px;
+  border: 1px solid rgb(233, 45, 45);
+}

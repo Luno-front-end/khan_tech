@@ -1,0 +1,9 @@
+@media screen and (min-width: $tablet) and (max-width: ($desktop-mini  - 1)) {
+  .wrapperv-departments {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 80px;
+
+    text-align: center;
+  }
+}

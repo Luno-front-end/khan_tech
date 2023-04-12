@@ -1,0 +1,33 @@
+.wrapper-pagination {
+  display: flex;
+  justify-content: center;
+}
+.css-lqq3n7-MuiButtonBase-root-MuiPaginationItem-root {
+  background-color: $bg-base-main-color !important;
+  color: $text-secondary-color !important;
+
+  width: 40px !important;
+  height: 40px !important;
+
+  border-radius: 50% !important;
+  border: 1px solid $active-color !important;
+
+  font-family: "Poppins" !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 28px !important;
+
+  &:hover {
+    background-color: $active-color !important;
+    color: $bg-base-main-color !important;
+  }
+}
+
+.Mui-selected {
+  background-color: $active-color !important;
+  color: $bg-base-main-color !important;
+}
+
+.Mui-disabled {
+  display: none !important;
+}

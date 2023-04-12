@@ -2,56 +2,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 // Styles components
-@import "~base/normalize";
-@import "~utils/variables";
-@import "~base/base";
+@import "./base/normalize";
+@import "./utils/variables";
+@import "./base/base";
 
 //DesktopFullHD
-@import "~components/desktopFullHD/header/header";
-@import "~components/desktopFullHD/header/dropdown/service";
-@import "~components/desktopFullHD/header/dropdown/subService";
-@import "~components/desktopFullHD/header/navigation";
-@import "~components/desktopFullHD/header/logo";
-@import "~components/desktopFullHD/header/contactHeader";
-@import "~components/desktopFullHD/hero/hero";
-@import "~components/desktopFullHD/hero/latestNews";
-@import "~components/desktopFullHD/testimonials/testimonials";
-@import "~components/desktopFullHD/testimonials/rating";
-@import "~components/desktopFullHD/testimonials/pagination";
-@import "~components/desktopFullHD/footer/footer";
-@import "~components/desktopFullHD/footer/departments";
-@import "~components/desktopFullHD/footer/quickLinks";
-@import "~components/desktopFullHD/footer/headOffice";
-@import "~components/desktopFullHD/footer/companyInfo";
+@import "./desktopFullHD/header";
+@import "./desktopFullHD/service";
+@import "./desktopFullHD/subService";
+@import "./desktopFullHD/navigation";
+@import "./desktopFullHD/logo";
+@import "./desktopFullHD/contactHeader";
+@import "./desktopFullHD/hero";
+@import "./desktopFullHD/latestNews";
+@import "./desktopFullHD/testimonials";
+@import "./desktopFullHD/rating";
+@import "./desktopFullHD/pagination";
+@import "./desktopFullHD/footer";
+@import "./desktopFullHD/departments";
+@import "./desktopFullHD/quickLinks";
+@import "./desktopFullHD/headOffice";
+@import "./desktopFullHD/companyInfo";
 
 //Desktop mini
 
-@import "~components/desktopMini/header/burger";
-@import "~components/desktopMini/footer/footer";
-@import "~components/desktopMini/footer/departments";
-@import "~components/desktopMini/footer/quickLinks";
-@import "~components/desktopMini/footer/headOffice";
-@import "~components/desktopMini/footer/companyInfo";
+@import "./desktopMini/burger";
+@import "./desktopMini/footer";
+@import "./desktopMini/departments";
+@import "./desktopMini/quickLinks";
+@import "./desktopMini/headOffice";
+@import "./desktopMini/companyInfo";
 
 //tablets
-@import "~components/tablet/header/burger";
-@import "~components/tablet/header/navigation";
-@import "~components/tablet/header/dropdown/service";
-@import "~components/tablet/header/dropdown/subService";
-@import "~components/tablet/hero/hero";
-@import "~components/tablet/hero/latestNews";
-@import "~components/tablet/footer/footer";
-@import "~components/tablet/footer/departments";
-@import "~components/tablet/footer/quickLinks";
-@import "~components/tablet/footer/headOffice";
-@import "~components/tablet/footer/companyInfo";
+@import "./tablet/burger";
+@import "./tablet/navigation";
+@import "./tablet/service";
+@import "./tablet/subService";
+@import "./tablet/hero";
+@import "./tablet/latestNews";
+@import "./tablet/footer";
+@import "./tablet/departments";
+@import "./tablet/quickLinks";
+@import "./tablet/headOffice";
+@import "./tablet/companyInfo";
 
 //admin
-@import "~components/admin/main";
-@import "~components/admin/sign";
+@import "./components/main";
+@import "./components/sign";
 
 //404
-@import "~components/desktopFullHd/notFound";
+@import "./desktopFullHd/notFound";
 
 //loader
-@import "~components/desktopFullHd/loader";
+@import "./desktopFullHd/loader";

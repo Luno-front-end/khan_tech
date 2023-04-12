@@ -1,0 +1,57 @@
+//Fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+// Styles components
+@import "./base/normalize";
+@import "./utils/variables";
+@import "./base/base";
+
+//DesktopFullHD
+@import "./components/desktopFullHD/header/header";
+@import "./components/desktopFullHD/header/dropdown/service";
+@import "./components/desktopFullHD/header/dropdown/subService";
+@import "./components/desktopFullHD/header/navigation";
+@import "./components/desktopFullHD/header/logo";
+@import "./components/desktopFullHD/header/contactHeader";
+@import "./components/desktopFullHD/hero/hero";
+@import "./components/desktopFullHD/hero/latestNews";
+@import "./components/desktopFullHD/testimonials/testimonials";
+@import "./components/desktopFullHD/testimonials/rating";
+@import "./components/desktopFullHD/testimonials/pagination";
+@import "./components/desktopFullHD/footer/footer";
+@import "./components/desktopFullHD/footer/departments";
+@import "./components/desktopFullHD/footer/quickLinks";
+@import "./components/desktopFullHD/footer/headOffice";
+@import "./components/desktopFullHD/footer/companyInfo";
+
+//Desktop mini
+
+@import "./components/desktopMini/header/burger";
+@import "./components/desktopMini/footer/footer";
+@import "./components/desktopMini/footer/departments";
+@import "./components/desktopMini/footer/quickLinks";
+@import "./components/desktopMini/footer/headOffice";
+@import "./components/desktopMini/footer/companyInfo";
+
+//tablets
+@import "./components/tablet/header/burger";
+@import "./components/tablet/header/navigation";
+@import "./components/tablet/header/dropdown/service";
+@import "./components/tablet/header/dropdown/subService";
+@import "./components/tablet/hero/hero";
+@import "./components/tablet/hero/latestNews";
+@import "./components/tablet/footer/footer";
+@import "./components/tablet/footer/departments";
+@import "./components/tablet/footer/quickLinks";
+@import "./components/tablet/footer/headOffice";
+@import "./components/tablet/footer/companyInfo";
+
+//admin
+@import "./components/admin/main";
+@import "./components/admin/sign";
+
+//404
+@import "./components/desktopFullHd/notFound";
+
+//loader
+@import "./components/desktopFullHd/loader";

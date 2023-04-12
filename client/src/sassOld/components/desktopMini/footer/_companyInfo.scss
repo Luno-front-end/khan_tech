@@ -1,0 +1,7 @@
+@media screen and (min-width: $desktop-mini) and (max-width: ($desktop - 1)) {
+  .wrapper-company-info {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+}
