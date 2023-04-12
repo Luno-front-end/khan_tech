@@ -6,52 +6,52 @@
 @import "./utils/variables";
 @import "./base/base";
 
-//Desktop_fullHD
-@import "./components/desktop_fullHD/header/header";
-@import "./components/desktop_fullHD/header/dropdown/service";
-@import "./components/desktop_fullHD/header/dropdown/sub_service";
-@import "./components/desktop_fullHD/header/navigation";
-@import "./components/desktop_fullHD/header/logo";
-@import "./components/desktop_fullHD/header/contact_header";
-@import "./components/desktop_fullHD/hero/hero";
-@import "./components/desktop_fullHD/hero/latest_news";
-@import "./components/desktop_fullHD/testimonials/testimonials";
-@import "./components/desktop_fullHD/testimonials/rating";
-@import "./components/desktop_fullHD/testimonials/pagination";
-@import "./components/desktop_fullHD/footer/footer";
-@import "./components/desktop_fullHD/footer/departments";
-@import "./components/desktop_fullHD/footer/quick_links";
-@import "./components/desktop_fullHD/footer/head_office";
-@import "./components/desktop_fullHD/footer/company_info";
+//DesktopFullHD
+@import "./components/desktopFullHD/header/header";
+@import "./components/desktopFullHD/header/dropdown/service";
+@import "./components/desktopFullHD/header/dropdown/subService";
+@import "./components/desktopFullHD/header/navigation";
+@import "./components/desktopFullHD/header/logo";
+@import "./components/desktopFullHD/header/contactHeader";
+@import "./components/desktopFullHD/hero/hero";
+@import "./components/desktopFullHD/hero/latestNews";
+@import "./components/desktopFullHD/testimonials/testimonials";
+@import "./components/desktopFullHD/testimonials/rating";
+@import "./components/desktopFullHD/testimonials/pagination";
+@import "./components/desktopFullHD/footer/footer";
+@import "./components/desktopFullHD/footer/departments";
+@import "./components/desktopFullHD/footer/quickLinks";
+@import "./components/desktopFullHD/footer/headOffice";
+@import "./components/desktopFullHD/footer/companyInfo";
 
 //Desktop mini
 
-@import "./components/desktop_mini/header/burger";
-@import "./components/desktop_mini/footer/footer";
-@import "./components/desktop_mini/footer/departments";
-@import "./components/desktop_mini/footer/quick_links";
-@import "./components/desktop_mini/footer/head_office";
-@import "./components/desktop_mini/footer/company_info";
+@import "./components/desktopMini/header/burger";
+@import "./components/desktopMini/footer/footer";
+@import "./components/desktopMini/footer/departments";
+@import "./components/desktopMini/footer/quickLinks";
+@import "./components/desktopMini/footer/headOffice";
+@import "./components/desktopMini/footer/companyInfo";
 
 //tablets
 @import "./components/tablet/header/burger";
 @import "./components/tablet/header/navigation";
 @import "./components/tablet/header/dropdown/service";
-@import "./components/tablet/header/dropdown/sub_service";
+@import "./components/tablet/header/dropdown/subService";
 @import "./components/tablet/hero/hero";
-@import "./components/tablet/hero/latest_news";
+@import "./components/tablet/hero/latestNews";
 @import "./components/tablet/footer/footer";
 @import "./components/tablet/footer/departments";
-@import "./components/tablet/footer/quick_links";
-@import "./components/tablet/footer/head_office";
-@import "./components/tablet/footer/company_info";
+@import "./components/tablet/footer/quickLinks";
+@import "./components/tablet/footer/headOffice";
+@import "./components/tablet/footer/companyInfo";
 
 //admin
 @import "./components/admin/main";
 @import "./components/admin/sign";
 
 //404
-@import "./components/desktop_fullHd/not_found";
+@import "./components/desktopFullHd/notFound";
 
 //loader
-@import "./components/desktop_fullHd/loader";
+@import "./components/desktopFullHd/loader";
